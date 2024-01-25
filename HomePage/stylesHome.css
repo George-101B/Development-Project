@@ -1,0 +1,186 @@
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins&display=swap');
+
+/* This does the smooth scrolling effect for anchor links */
+html {
+   scroll-behavior:smooth;
+}
+
+/* Reset all default margins and paddings, sets box-sizing to border-box, and sets the default font to Poppins */
+* { /* the * is a universal indicator. Which matches every single element on the page. The * applies the CSS properties to every element on the page */ 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+
+/* Styles the background  */
+.background {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url(/Imagesforwebsite/networks4kimage.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+   z-index: -1; /* this does the overlapping of vertical elements. -1 places it behind all other elements */ 
+}
+
+/* This adds a dark overlay to the background image which makese the background image look better */
+.background::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.85);
+}
+
+body {
+   position: relative;
+   min-height: 150vh; 
+}
+
+/* the header has a fixed position so it stays at the top when page scrolls */
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 75px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(20, 20, 20); /* Set a dark background for the header */
+}
+
+
+.navbar a { /* the 'a' selector targets all the <a> links that are in the navbar class */ 
+   font-size: 20px;
+   font-weight: 500;
+   margin-left: 40px;
+   text-decoration: none;
+   text-align: left;
+   color: white;
+}
+
+/* This styles the hero section */
+.hero {
+   padding-top: 120px;
+   color: white;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+/* Sets the size for "Cyber security just got simple" */
+.hero-heading {
+   font-size: 70px;
+}
+
+/* Sets the size for "No need to be a computer whizz to understand cyber attacks. Let’s learn these things together." */
+.hero-paragraph {
+   font-size: 25px;
+   margin: 35px 0 50px 0;
+   text-align: center;
+}
+
+/* Arranges the hero buttons in a flex container */
+.hero-buttons {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+}
+
+/* this does the size for the buttons */
+.learn-more, .about-us {
+   font-size: 15px;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+/* This does the colour */
+.learn-more {
+   background-color: rgb(22, 22, 22);
+   color: white;
+   text-decoration: none;
+}
+
+
+/* This does the colour*/
+.about-us {
+   background-color: #D9D9D9;
+   color: black;
+}
+
+
+.cards-container { /* this container is here to hold the multiple cards */
+   position: absolute;
+   top: 650px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   flex-wrap: wrap;
+}
+
+/* Styles the individual cards */
+.card {
+   width: 150px;
+   height: 225px;
+   background-color: #1a1a1a;
+   color: white;
+   padding: 20px;
+   text-align: center;
+   box-sizing: border-box;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   flex: 1 0 30%; /* Flex grow, shrink and basis */
+   margin: 20px;
+}
+
+/* Styles the title of each card, e.g Phishing, Malware etc */
+.card h3 {
+   font-size: 30px;
+   margin: 0 0 15px 0;
+}
+
+/* Styles the card paragraphs */
+.card p {
+   font-size: 18px;
+   margin: 0 0 15px 0;
+   text-align: center;
+}
+
+/* Styles the buttons within cards */
+.card button {
+   background-color: black;
+   color: white;
+   padding: 10px 20px;
+   border-radius: 10px;
+   font-size: 15px;
+   border: none;
+   cursor: pointer;
+   text-align: center;
+   align-self: center;
+}
+
+/* Styles the footer*/
+.footer {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 75px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(20, 20, 20);
+   color: white;
+}

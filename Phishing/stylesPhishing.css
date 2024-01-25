@@ -1,0 +1,155 @@
+/* Imports the font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins&display=swap');
+
+/* Reset all default margins and paddings, sets box-sizing to border-box, and sets the default font to Poppins */
+* { /* the * is a universal indicator. Which matches every single element on the page. The * applies the CSS properties to every element on the page */ 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+
+/* Styles the background  */
+.background {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url(/Imagesforwebsite/2k_image.jpeg);
+   background-size: cover;
+   z-index: -1; /* this z-index does the overlaing, this puts the background to the back of the overlay */
+}
+
+.background::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.85);
+}
+
+h1 {
+   color: rgb(255, 255, 255);
+   font-size: 100px;
+   margin-top: 75px;
+
+}
+
+h2{
+   color: rgb(255, 255, 255);
+   font-size: 50px;
+   text-align: left;
+}
+
+.explaination{
+   color: rgb(255, 255, 255);
+   padding: 30px;
+   font-size: 25px;
+   
+
+}
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   margin-bottom: 200px;
+   padding: 20px 75px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(20, 20, 20);
+}
+
+/* the 'a' selector targets all the <a> links that are in the navbar class */ 
+.navbar a {
+   font-size: 20px;
+   font-weight: 500;
+   margin-left: 40px;
+   color: white;
+   text-decoration: none;
+   text-align: left;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: top;
+   align-items: center;
+   position: relative;
+   z-index: 1;
+   min-height: 150vh;
+}
+
+.quiz_button{
+   border-radius: 10px;
+   font-size: 25px;
+   padding: 10px;
+   cursor: pointer;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+ /*.accordion {
+   background-color: #1a1a1a;
+   color: #ffffff;
+   margin-top: 20px;
+   border-radius: 10px;
+   cursor: pointer;
+   padding: 28px;
+   width: 50%;
+   text-align: center;
+   font-size: 25px;
+   border: none;
+   outline: none;
+   transition: 0.4s;
+ }
+ */  
+ /* this does the hover effect colour change 
+ .active, .accordion:hover {
+   background-color: #494949;
+ }*/ 
+ 
+ /* Style the accordion panel. hidden by default, unless clicked 
+ .panel {
+   padding: 18px 18px 18px 18px;
+   text-align: center;
+   border-radius: 10px;
+   width: 50%;
+   font-size: 20px;
+   background-color: #1a1a1a;
+   color: #ffffff;
+   display: none;
+   overflow: hidden;
+ }
+ */
+
+ /* this sets the styling for the button insdie the quiz accordion 
+ .panel button {
+   background-color: rgb(255, 255, 255);
+   font-size: 18px;
+   border-radius: 10px;
+   cursor: pointer;
+   padding: 15px;
+ }
+ */ 
+ 
+
+
+
+/* Footer styling: Positions the footer at the bottom of the page */
+.footer {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 75px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(20, 20, 20);
+   color: white;
+}
+
