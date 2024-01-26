@@ -28,6 +28,7 @@ h1{
     justify-content: space-between;
     background-color: #06171A;
     border-bottom: 1px solid #DCF5F7;
+    
 }
 
 
@@ -112,8 +113,9 @@ h1{
     min-height: 100vh;
     display: block;
     background-color: #06171A;
-    padding-top: 120px;
+    padding-top: 100px;
     transition: 0.4s;
+    margin-top: 0;
 }
 
 
@@ -157,8 +159,10 @@ h1{
     #menu a {
         display: none;
     }
+    .mobile-nav {
+         margin-top: -35px; /* This works. Revise this, dont think this is best practise */
+    }
 }
-
 
 /* ---- Overview Section -----*/
 
@@ -187,8 +191,8 @@ h1{
 .Rans-overview h1{
     font-size: 50px;
     text-align: center;
-    margin-top: 125px;
     margin-bottom: 20px;
+    margin-top: 125px;
 }
 
 
@@ -236,6 +240,8 @@ h1{
     padding-bottom: 50px;
     padding-top: 20px;
     font-size: 30px;
+    margin-left: 20px;
+    margin: 20px;
 }
 
 
