@@ -23,7 +23,7 @@ h1{
     align-items: center;
     justify-content: space-between;
     background-color: #06171A;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #DCF5F7;
     padding-bottom: 0;
 }
 
@@ -169,20 +169,15 @@ h1{
     color: #060820;
     padding: 50px;
     transition: 0.3s;
+    font-size: 20px;
+    text-align: center;
+    max-width: 80ch;
 }
 
 
 .text-container:hover{
     outline: 5px solid #BF44D4;
     border-radius: 10px;
-}
-
-
-.Rans-overview {
-    font-size: 20px;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 
@@ -196,19 +191,30 @@ h1{
 
 /* ---- Video Section -----*/
 
+.video-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #8FDAE5;
+    color: #060820;
+    padding: 50px;
+    transition: 0.3s;
+    font-size: 20px;
+    max-width: 80ch;
+}
+
+.video-container iframe{
+    border-radius: 10px;
+    display: flex;
+}
 
 .Rans-video h1{
     font-size: 50px;
     text-align: center;
     margin-top: 100px;
-}
-
-
-.video-container{
-    margin-top: 25px;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 
