@@ -11,6 +11,13 @@
     color: #DCF5F7;
 }
 
+h1{
+    color: #DCF5F7;
+}
+
+/* ---- Navigation bar -----*/
+
+
 .navigation{
     display: flex;
     align-items: center;
@@ -19,7 +26,6 @@
     border-bottom: 1px solid #ffffff;
     padding-bottom: 0;
 }
-
 
 
 #menu a {
@@ -31,6 +37,7 @@
     transition: 0.4s;
 }
 
+
 #menu a:hover {
     border-radius: 5px;
     padding: 5px;
@@ -38,14 +45,20 @@
     color: #DCF5F7;
 }
 
+
 .current-page{
     border-bottom: 3px solid #BF44D4;
 }
+
 
 .navigation img{
     width: 150px;
     margin-left: 50px;
 }
+
+
+/* ---- Hamburger menu -----*/
+
 
 .hamburger{
     position: relative;
@@ -60,6 +73,7 @@
     border: none;
 }
 
+
 .hamburger .bar, .hamburger:after, .hamburger:before{
     content: '';
     display: block;
@@ -70,9 +84,11 @@
     transition: 0.4s;
 }
 
+
 .hamburger.is-active .bar{
     opacity: 0;
 }
+
 
 .hamburger.is-active:before{
     transform: rotate(-45deg) translate(-8px, 6px);
@@ -86,7 +102,6 @@
 }
 
 
-
 .mobile-nav{
     position: fixed;
     left: 100%;
@@ -98,9 +113,11 @@
     transition: 0.4s;
 }
 
+
 .mobile-nav.is-active{
     left: 0;
 }
+
 
 .mobile-nav a {
     display: block;
@@ -117,10 +134,10 @@
     transition: 0.3s;
 }
 
+
 .mobile-nav a:hover{
     background-color: #ffffff;
 }
-
 
 
 @media (min-width: 1044px){    
@@ -132,11 +149,15 @@
     }
 }
 
+
 @media (max-width: 1043px) {  
     #menu a {
         display: none;
     }
 }
+
+
+/* ---- Overview Section -----*/
 
 
 .text-container{
@@ -150,11 +171,19 @@
     transition: 0.3s;
 }
 
+
 .text-container:hover{
     outline: 5px solid #BF44D4;
     border-radius: 10px;
 }
 
+
+.Rans-overview {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
 
 .Rans-overview h1{
@@ -164,12 +193,9 @@
     margin-bottom: 20px;
 }
 
-.Rans-overview {
-    font-size: 20px;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
-}
+
+/* ---- Video Section -----*/
+
 
 .Rans-video h1{
     font-size: 50px;
@@ -177,28 +203,36 @@
     margin-top: 100px;
 }
 
+
+.video-container{
+    margin-top: 25px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+/* ---- Quiz Section -----*/
+
+
 .Rans-quiz h1{
     font-size: 50px;
     text-align: center;
     margin-top: 300px;
 }
 
+
 .Rans-quiz h3 {
     text-align: center;
     padding-bottom: 50px;
     padding-top: 20px;
     font-size: 30px;
-
 }
+
 
 .Rans-quiz {
     text-align: center;
     padding-bottom: 100px;
-
-}
-
-.Rans-heading h1{
-    color: #DCF5F7;
 }
 
 
@@ -223,10 +257,6 @@
     outline-offset: 10px;
 }
 
-footer a{
-    text-decoration: none;
-    color: #ffffff;
-}
 
 @media (max-width: 1043px) {  
     .Rans-video h1,
@@ -234,4 +264,9 @@ footer a{
     .Rans-overview h1 {
         font-size: 30px;
     }
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
 }
