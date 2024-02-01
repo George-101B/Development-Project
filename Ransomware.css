@@ -164,8 +164,47 @@ h1{
     }
 }
 
-/* ---- Overview Section -----*/
+/* ---- Home Page ---- */
 
+.hero h1{
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 150px;
+}
+
+.hero h3{
+    max-width: 80ch;
+    font-size: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 100px;
+    font-size: 50px;
+}
+
+.hero-buttons button{
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    border: none;
+    padding: 10px;
+}
+
+.hero-buttons button:hover{
+    background-color: #BF44D4;
+    color: #DCF5F7;
+}
+
+
+/* ---- Overview Section -----*/
 
 .text-container{
     width: 80%;
