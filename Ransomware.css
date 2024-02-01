@@ -174,11 +174,11 @@ h1{
 }
 
 .hero h3{
-    max-width: 80ch;
     font-size: 30px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left:  20px;
+    margin-right: 20px;
+
 }
 
 .hero-buttons {
@@ -186,11 +186,10 @@ h1{
     justify-content: center;
     margin-top: 40px;
     gap: 100px;
-    font-size: 50px;
 }
 
 .hero-buttons button{
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.4s;
@@ -203,6 +202,7 @@ h1{
     color: #DCF5F7;
 }
 
+  
 
 /* ---- Overview Section -----*/
 
