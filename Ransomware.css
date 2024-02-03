@@ -257,9 +257,10 @@ h1{
 
 .card{
     width: 425px;
-    background-color: #DCF5F7;
+    background-color: #bbc9ca;
     border-radius: 10px;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 .card img{
@@ -296,6 +297,10 @@ h1{
     border-radius: 10px;
     color: #DCF5F7;
 
+}
+
+.card:hover{
+    outline: 5px solid #BF44D4;
 }
 
 
