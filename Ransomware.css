@@ -167,7 +167,7 @@ h1{
 /* ---- Home Page ---- */
 
 .hero{
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 .hero h1{
@@ -212,27 +212,90 @@ h1{
 }
 
 .wrapper{
-    margin-top: 40px;
-    margin-bottom: 150px;
-    margin-left: 200px;
+    margin: auto;
+    margin-bottom: 50px;
     width: 70%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .wrapper img{
     max-width: 120px;
     border-radius: 20%;
-    margin-right: 20px;
 }
 
 .text-box h2{
+    margin-left: 40px;
     font-size: 42px;
     text-align: left;
 }
 
 .text-box p{
+    margin-left: 40px;
     font-size: 20px;
+}
+
+
+.learn-more{
+    margin-top: 200px;
+    color: #000000;
+}
+
+.learn-more h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 100px;
+}
+
+.card{
+    width: 425px;
+    background-color: #DCF5F7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card-content p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.card-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #BF44D4;
+    font-size: 20px;
+    padding: 8px 16px;
+    transition: 0.4s;
+}
+
+.card-button:hover{
+    background-color: #06171A;
+    border-radius: 10px;
+    color: #DCF5F7;
+
 }
 
 
@@ -354,6 +417,11 @@ h1{
     .Rans-overview h1 {
         font-size: 30px;
     }
+}
+
+
+footer{
+    margin-top: 150px;
 }
 
 footer a{
